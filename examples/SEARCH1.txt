@@ -1,0 +1,13 @@
+sudo apt update
+sudo apt install openjdk-17-jre
+
+sudo apt install maven
+mvn -v
+
+
+cd ..
+rm -rf WifSolver  
+git clone https://github.com/Qalander/WifSolver.git
+cd WifSolver
+mvn -q -DskipTests clean package
+java -jar target/wifSolver-jar-with-dependencies.jar examples/SEARCH3.conf

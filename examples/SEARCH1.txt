@@ -10,4 +10,4 @@ rm -rf WifSolver
 git clone https://github.com/Qalander/WifSolver.git
 cd WifSolver
 mvn -q -DskipTests clean package
-java -jar target/wifSolver-jar-with-dependencies.jar examples/SEARCH3.conf
+java -jar target/wifSolver-jar-with-dependencies.jar examples/SEARCH2.conf
